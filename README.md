@@ -2,6 +2,31 @@
 
 This repository contains the official implementation of the paper: **"Symmetry-Aware Framework for Bidirectional Modeling of 3D Photonic Crystals and Band Structures"**.
 
+## 🗄️ Dataset & Pre-trained Weights
+
+Due to GitHub's file size limits, the high-fidelity dataset and the pre-trained model weights are hosted externally on Google Drive. 
+
+**Download Link:**
+- [Google Drive Folder (Contains data.rar and Weights.rar)](https://drive.google.com/drive/folders/1agDvNkY98UrYIKuBCcNKpvvBs_wIWyBQ?usp=drive_link)
+
+**Setup Instructions:**
+1. Open the Google Drive link and download both `data.rar` and `Weights.rar`.
+2. Extract the contents of both `.rar` archives directly into the root directory of this cloned repository. 
+
+Your final directory structure must look exactly like this to run the code successfully:
+
+```text
+3D-PhC-Inverse-Design/
+├── data/                 <-- Extracted from data.rar
+│   └── ...
+├── Models/
+├── utils/
+├── Weights/              <-- Extracted from Weights.rar
+│   └── ...
+├── README.md
+├── requirements.txt
+└── Save_Sample.py
+
 ## Overview
 
 This project provides a closed-loop deep learning framework for the inverse design of 3D Photonic Crystals (PhCs). It addresses the "curse of dimensionality" in 3D material design by integrating crystallographic symmetry groups directly into the generative process.
@@ -132,5 +157,6 @@ Note: The script supports multi-GPU training and will automatically detect avail
 - **Symmetry Enforcement**: Located in `utils/Enforce_Symmetry.py`. Uses `spglib` logic to strictly enforce crystallographic constraints (Space Groups 195-230) on generated voxels during post-processing, ensuring physical validity.
 
 - **Robust Post-Processing**: Located in `utils/reconstruct_diffusion_test.py`. Includes percentile thresholding, connected component analysis, and boundary smoothing to convert grayscale diffusion outputs into binary material masks.
+
 
 
