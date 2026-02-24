@@ -6,6 +6,31 @@ This repository contains the official implementation of the paper: **"Symmetry-A
 
 This project provides a closed-loop deep learning framework for the inverse design of 3D Photonic Crystals (PhCs). It addresses the "curse of dimensionality" in 3D material design by integrating crystallographic symmetry groups directly into the generative process.
 
+## 🗄️ Dataset & Pre-trained Weights
+
+Due to GitHub's file size limits, the high-fidelity dataset and the pre-trained model weights are hosted externally on Google Drive. 
+
+**Download Link:**
+- [Google Drive Folder (Contains data.rar and Weights.rar)](请在这里粘贴您的Google Drive共享链接)
+
+**Setup Instructions:**
+1. Open the Google Drive link and download both `data.rar` and `Weights.rar`.
+2. Extract the contents of both `.rar` archives directly into the root directory of this cloned repository. 
+
+Your final directory structure must look exactly like this to run the code successfully:
+
+```text
+3D-PhC-Inverse-Design/
+├── data/                 <-- Extracted from data.rar
+│   └── ...
+├── Models/
+├── utils/
+├── Weights/              <-- Extracted from Weights.rar
+│   └── ...
+├── README.md
+├── requirements.txt
+└── Save_Sample.py
+
 The framework consists of two main components:
 
 1. **Forward Prediction Model**: A **ResNet-Transformer** architecture (`CNNNetWork.py`) that accurately predicts photonic band structures (PBS) from 3D voxelized geometries.
