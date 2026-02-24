@@ -1,0 +1,8 @@
+torch>=2.0.0
+numpy
+scipy
+matplotlib
+monai
+spglib
+pyvista
+huggingface_hub
