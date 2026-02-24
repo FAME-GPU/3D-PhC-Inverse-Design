@@ -11,7 +11,7 @@ This project provides a closed-loop deep learning framework for the inverse desi
 Due to GitHub's file size limits, the high-fidelity dataset and the pre-trained model weights are hosted externally on Google Drive. 
 
 **Download Link:**
-- [Google Drive Folder (Contains data.rar and Weights.rar)](请在这里粘贴您的Google Drive共享链接)
+- [Google Drive Folder (Contains data.rar and Weights.rar)](https://drive.google.com/drive/folders/1agDvNkY98UrYIKuBCcNKpvvBs_wIWyBQ?usp=drive_link)
 
 **Setup Instructions:**
 1. Open the Google Drive link and download both `data.rar` and `Weights.rar`.
