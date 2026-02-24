@@ -26,6 +26,7 @@ Your final directory structure must look exactly like this to run the code succe
 ├── README.md
 ├── requirements.txt
 └── Save_Sample.py
+```
 
 ## Overview
 
@@ -157,6 +158,7 @@ Note: The script supports multi-GPU training and will automatically detect avail
 - **Symmetry Enforcement**: Located in `utils/Enforce_Symmetry.py`. Uses `spglib` logic to strictly enforce crystallographic constraints (Space Groups 195-230) on generated voxels during post-processing, ensuring physical validity.
 
 - **Robust Post-Processing**: Located in `utils/reconstruct_diffusion_test.py`. Includes percentile thresholding, connected component analysis, and boundary smoothing to convert grayscale diffusion outputs into binary material masks.
+
 
 
 
