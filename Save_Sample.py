@@ -197,7 +197,7 @@ def main():
     parser = argparse.ArgumentParser(description="Generate & Select Best Photonic Crystal Structures")
 
     # Model and Path Arguments
-    parser.add_argument("--diffusion-ckpt", type=str, default="Weights/diffusionunet_checkpoing100.pth",
+    parser.add_argument("--diffusion-ckpt", type=str, default="Weights/diffusionunet_checkpoint100.pth",
                         help="Path to diffusion model weights")
     parser.add_argument("--cnn-ckpt", type=str, default="Weights/resnet_model.pth",
                         help="Path to CNN predictor weights")
@@ -331,4 +331,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
